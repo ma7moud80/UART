@@ -1,0 +1,58 @@
+# ERROR: No extended dataflow license exists
+# vsim WORK.SYS_TOP_TB 
+# Loading WORK.SYS_TOP_TB
+# Loading WORK.SYS_TOP
+# Loading WORK.RST_SYNC
+# Loading WORK.DATA_SYNC
+# Loading WORK.BIT_SYNC
+# Loading WORK.ClkDiv
+# Loading WORK.UART
+# Loading WORK.UART_TX
+# Loading WORK.uart_tx_fsm
+# Loading WORK.Serializer
+# Loading WORK.mux
+# Loading WORK.parity_calc
+# Loading WORK.UART_RX
+# Loading WORK.uart_rx_fsm
+# Loading WORK.edge_bit_counter
+# Loading WORK.data_sampling
+# Loading WORK.deserializer
+# Loading WORK.strt_chk
+# Loading WORK.par_chk
+# Loading WORK.stp_chk
+# Loading WORK.SYS_CTRL
+# Loading WORK.SYS_CTRL_RX
+# Loading WORK.SYS_CTRL_TX
+# Loading WORK.RegFile
+# Loading WORK.ALU
+# Loading WORK.CLK_GATE
+# ** Warning: (vsim-3017) SYS_TOP_TB.v(37): [TFMPC] - Too few port connections. Expected 7, found 5.
+# 
+#         Region: /SYS_TOP_TB/DUT
+# ** Warning: (vsim-3722) SYS_TOP_TB.v(37): [TFMPC] - Missing connection for port 'parity_error'.
+# 
+# ** Warning: (vsim-3722) SYS_TOP_TB.v(37): [TFMPC] - Missing connection for port 'framing_error'.
+# 
+add wave -position insertpoint sim:/SYS_TOP_TB/*
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: mahmoud  Hostname: MA7MOUD  ProcessID: 26136
+# 
+#           Attempting to use alternate WLF file "./wlft6q1f30".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlft6q1f30
+# 
+run -all
+# Break in Module SYS_TOP_TB at SYS_TOP_TB.v line 59
+restart -f
+# ** Warning: (vsim-3017) SYS_TOP_TB.v(37): [TFMPC] - Too few port connections. Expected 7, found 5.
+# 
+#         Region: /SYS_TOP_TB/DUT
+# ** Warning: (vsim-3722) SYS_TOP_TB.v(37): [TFMPC] - Missing connection for port 'parity_error'.
+# 
+# ** Warning: (vsim-3722) SYS_TOP_TB.v(37): [TFMPC] - Missing connection for port 'framing_error'.
+# 
+add wave -position insertpoint sim:/SYS_TOP_TB/DUT/U0_UART/U0_UART_TX/*
+run -all
+# Break in Module SYS_TOP_TB at SYS_TOP_TB.v line 59
